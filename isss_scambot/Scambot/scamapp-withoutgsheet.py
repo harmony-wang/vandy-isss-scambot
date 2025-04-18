@@ -158,7 +158,7 @@ if user_input:
 
     st.session_state.chat_history.append(HumanMessage(content=user_input))
 
-    with st.spinner("Thinking..."):
+    with st.spinner("Loading..."):
         try:
             retrieved_docs_with_scores = vector_store.similarity_search_with_score(user_input, k=5)
 
