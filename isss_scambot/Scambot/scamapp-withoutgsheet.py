@@ -167,9 +167,6 @@ if user_input:
                 "chat_history": st.session_state.chat_history
             })
             answer = response["answer"]
-            
-            # ✅ Log the interaction
-            log_interaction(st.session_state.session_id, user_input, answer)
     
             st.session_state.chat_history.append(AIMessage(content=answer))
 
