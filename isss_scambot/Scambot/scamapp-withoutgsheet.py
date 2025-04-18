@@ -180,7 +180,6 @@ if user_input:
                 source_links = "\n\n**Sources:**\n" + "\n".join(f"- [Link]({src})" for src in set(high_score_sources))
                 answer += source_links
 
-            st.session_state.chat_history.append(AIMessage(content=answer))
             st.markdown(f"""
             <div style='display: flex; justify-content: flex-start;'>
                 <div class='message-bubble bot-bubble'>
